@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/fontawesome-free-6.5.2-web (1)/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        @font-face{
+            font-family: 'Inter';
+            src: url(../../Downloads/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+        }
+        @font-face{
+            font-family: 'Montserrat';
+            src: url(../../Downloads/Montserrat/Montserrat-VariableFont_wght.ttf);
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hd{
+            width: calc(100% - 200px);
+            height: fit-content;
+            display: flex;
+            margin: auto 0;
+            background-color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+            color: #fffbfa;
+            padding: 10px 100px;
+            font-size: 18px;
+            justify-content: space-evenly;
+            /* align-content: center; */
+            align-items: center;
+        }
+        .IZZY{
+            font-size: 30px;
+            font-family: 'Inter', sans-serif;
+            color: #fffbfa;
+        }
+        .lu{
+            display: flex;
+        }
+        .lu li a{
+            color: #fffbfa;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .lu li a:hover{
+            color: #d0e562;
+        }
+        .font a{
+            color: #b6d369;
+            font-size: 22px;
+            margin-left: 12px;
+        }
+        .font a:hover{
+            
+            color: #eae7cb;
+        }
+        .hoot{
+            width: calc(100% - 160px);
+            height: fit-content;
+            padding: 40px 80px;
+            background-color: #00203e;
+            border-bottom: 1px solid #5e5e5e;
+            line-height: 40px;
+            display: flex;
+            justify-content: space-between
+        }
+        .mont .ink{
+            margin-left: 15px;
+        }
+        .foot{
+            width: calc(100% - 160px);
+            line-height: 40px;
+        }
+        .ads{
+            left: -350px;
+            line-height: 40px;
+        }
+        input:checked ~ .ads{
+            left: 0;
+    
+        }
+        .lagsok{
+            height: 250px;
+        }
+        .lone{
+            width: 100%;
+            height: fit-content;
+            padding: 50px 0;
+            background-color: #eae7cb;
+        }
+        .hone{
+            font-size: 115px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hwo{
+            font-size: 77px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .give{
+            width: 55%;
+            height: fit-content;
+            /* background-color: teal; */
+            margin: 0 auto;
+        }
+        .march{
+            width: 100%;
+            height: fit-content;
+            font-size: 25px;
+            /* background-color: teal; */
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 100px;
+        }
+        .sect{
+            font-size: 18px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif; 
+            border: 1px solid #00203e;
+            border-radius: 7px;
+            padding: 5px 10px;
+        }
+        .sect option{
+            font-weight: bold;
+        }
+        .iv{
+            display: flex;
+            justify-content: space-between;
+        }
+        .doug{
+            display: flex;
+            gap: 0px 20px;
+        }
+        .git{
+            border-bottom: 2px solid #00203e;
+            width: 100%;
+            height: fit-content;
+            margin-top: 40px;
+            padding: 5px 2px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 510;
+            font-family: 'Inter', sans-serif;
+            color: #00203e;
+            align-items: center;
+
+        }
+        .doug{
+            font-size: 20px;
+            font-weight: 510;
+            font-weight: bold;
+            /* font-family: 'Inter', sans-serif; */
+        }
+        .hilt{
+            border-bottom: 2px solid #00203e;
+            width: 100%;
+            height: fit-content;
+            /* margin-top: 40px; */
+            padding: 10px 2px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 510;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            /* align-content: center; */
+            align-items: center;
+            font-weight: bold;
+        }
+        .fons{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            color: #f32a56;
+        }
+        .ona{
+            font-size: 21px;
+            font-weight: 710;
+            margin-top: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .debut{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .list{
+            width: 100%;
+            height: fit-content;
+            background-color: #eae7cb;
+            padding: 50px 0;
+        }
+        .wisy{
+            width: 60%;
+            height: fit-content;
+            border-top: 2px solid #00203e;
+            padding: 20px 0;
+            /* background-color: red; */
+            margin: 50px auto;
+        }
+        .by{
+            font-size: 15px;
+            color: #00203e;
+            font-weight: 510;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: space-between;
+        }
+        .eliz{
+            text-decoration: none;
+            width: fit-content;
+            height: fit-content;
+            padding: 5px 10px;
+            border: 1px solid #00203e;
+            border-radius: 10px;
+            color: #00203e;
+        }
+        .fare{
+            font-size: 18px;
+            color: #00203e;
+            font-weight: 710;
+            font-family: 'Montserrat', sans-serif;
+            /* margin-top: 30px; */
+        }
+        .fare p{
+            margin-bottom: 10px;
+        }
+        .fare .hg{
+            color: #00203e;
+
+        }
+        .fare .fg{
+            color: #00203e;
+            margin-left: 10px;
+
+        }
+        .nales{
+            width: 75%;
+            height: fit-content;
+            /* background-color: yellow; */
+            font-weight: 550;
+            /* background-color: red; */
+
+        }
+        .ales{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            font-size: 35px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+        }
+        .snare{
+            display: flex;
+            justify-content: space-between;
+            width: fit-content;
+            /* background-color: red; */
+            margin-top: 50px;
+        }
+        .jejet{
+            width: 95%;
+            height: 500px;
+            margin-top: 20px;
+        }
+        .bale{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .nole{
+            font-size: 60px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            margin-top: -10px;
+            width: fit-content;
+            height: fit-content;
+            /* background-color: yellow; */
+        }
+        .pale{
+            width: 91%;
+            height: fit-content;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            /* background-color: yellow; */
+
+        }
+        .fale{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 410;
+            margin-top: 30px;
+            color: #00203e;
+        }
+        .pt{
+            margin-top: 20px;
+        }
+        .kt{
+            margin-top: 20px;
+            font-size: 17px;
+            font-family: 'Inter', sans-serif;
+            color: #da0f31;
+        }
+        .audi{
+            width: 100%;
+            height: 50px;
+        }
+        .jt{
+            margin-top: 20px;
+            font-size: 17px;
+            margin-left: 40px;
+            font-family: 'Inter', sans-serif;
+            color: #00203e;
+        }
+        .doon{
+            width: calc(100% - 40px);
+            height: fit-content;
+            background-color: #eae7cb;
+            padding: 20px 20px;
+        }
+        .foon{
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+        }
+        .boog{
+            width: 20%;
+            height: fit-content;
+            /* background-color: red; */
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 7px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 510;
+        }
+        .noog{
+            width: 60%;
+            height: fit-content;
+            margin-left: 40px;
+            /* background-color: blue; */
+        }
+        .wii{
+            font-size: 60px;
+            /* color: red; */
+            font-weight: 510;
+            
+        }
+        .fct{
+            font-size: 30px;
+            /* color: red; */
+            font-weight: 510;
+            margin-top: 20px;
+            
+        }
+        .dot{
+            text-align: center;
+            line-height: 30px;
+        }
+        .dot li a{
+            color: #da0f31;
+            font-weight: 510;
+        }
+        .fot{
+            text-align: center;
+            line-height: 30px;
+            /* margin-left: 40px; */
+            margin-top: 40px;
+
+
+
+        }
+        .fot li a{
+            color: #da0f31;
+            font-weight: 510;
+
+        }
+        .kot{
+            text-align: center;
+            line-height: 30px;
+            /* margin-left: 40px; */
+            margin-top: 40px;
+        }
+        .kot li a{
+            color: #da0f31;
+            font-weight: 510;
+        }
+        .pft{
+            width: fit-content;
+            height: fit-content;
+            margin: 0px 50px;
+            margin-right: 0px;
+            /* background-color: red; */
+            padding: 20px 50px;
+            /* margin-top: 20px; */
+            /* display: flex; */
+            /* justify-content: space-between; */
+        }
+         @media (max-width: 1300px) {
+            .hd{
+                padding: 10px 40px;
+                width: calc(100% - 80px);
+                /* background-color: red; */
+            }
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 84px;
+                opacity: 0;
+            }
+        } 
+        @media (max-width: 1199px) {
+            /* .hd{
+                background: #000;
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 195px;
+                /* opacity: 1; */
+            }
+        }
+        @media (max-width: 1110px) {
+            /* .hd{
+                background: #000;
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 185px;
+                /* opacity: 1; */
+            }
+        }
+        @media (max-width: 1060px) {
+            /* .hd{
+                background-color: blue;
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 180px;
+                /* opacity: 1; */
+            }
+            
+        }
+        @media (max-width: 1020px) {
+            /* .hd{
+                background-color: rgb(255, 0, 191);
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                /* opacity: 1; */
+            }
+            
+        }
+        @media (max-width: 1000px) {
+            /* .hd{
+                background-color: rgb(255, 0, 0);
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                /* opacity: 1; */
+            }
+            
+        }
+        @media (max-width: 700px) {
+            /* .hd{
+                background-color: rgb(20, 3, 51);
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 95px;
+                /* opacity: 1; */
+            }
+            
+        }
+        @media (max-width: 600px) {
+            /* .hd{
+                background-color: rgb(89, 0, 255);
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 65px;
+                /* opacity: 1; */
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="hd">
+        <div class="my" onclick="menu();">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="Index.html" class="IZZY">IZZY MUSIC</a>
+        <ul class="lu">
+            <li>
+                <a href="IZZY songs.html" class="">SONGS</a>
+            </li>
+            <li>
+                <a href="IZZY news.html" class="">NEWS</a>
+            </li> <li>
+                <a href="IZZY lyrics.html" class="">LYRICS</a>
+            </li>
+            <li>
+                <a href="IZZY sports.html" class="">SPORTS</a>
+            </li>
+            <li>
+                <a href="Ranking.html" class="">POWER RANKING</a>
+            </li>
+        </ul>
+        <div class="font my-auto">
+            <a href="" class="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="https://wa.me/+2348140583514" class="ml-3 card-link gr">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="gr">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="gr">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" class="gr">
+                <i class="fa-brands fa-facebook-f" ></i>
+            </a>
+            <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="gr">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="gr">
+                <i class="fa-brands fa-x-twitter" class="fa"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+        </div>
+    </div> 
+    <div class="doon">
+        <div class="foon">
+            <div class="boog">
+                Male and Female Celebrities, Afrobeats Artists and Musicians from A-to-Z
+            </div>
+            <div class="noog">
+                <span class="wii">W</span>
+                elcome to our comprehensive page featuring the 
+                List of names of both male and female Nigerian and 
+                African singers and celebrities. Here, we celebrate 
+                the vibrant and diverse talent that graces the Nigerian and 
+                Africa music scene, showcasing a compilation of the most 
+                acclaimed and beloved celebrities, from different music 
+                genre - Afrobeats to hip-hop, gospel to highlife, 
+                to notable figures in the music ecosystem
+
+                <p class="fct">
+                   Popular Male and Female Celebs and Musicians
+                </p>
+
+                <p class="pt">
+                   This curated collection highlights the voices and 
+                   Individuals that have captured hearts and 
+                   transcended borders, making a significant 
+                   impact on the global music and sports landscape. 
+                   Whether you're a die-hard fan or a curious newcomer, 
+                   join us on this Musical journey as we pay homage to the 
+                   icons and rising superstars who have shaped the culture 
+                   of Nigeria and global.
+
+
+                </p>
+                
+                <div class="pft">
+                    <p class="fct">
+                        A
+                    </p>
+                    <ul class="dot">
+                        <li>
+                            <a href="">AdaEhi</a>
+                        </li>
+                        <li>
+                            <a href="">Adekunle Gold</a>
+                        </li>
+                        <li>
+                            <a href="">Afro B</a>
+                        </li>
+                        <li>
+                            <a href="">Ajebutter22</a>
+                        </li>
+                        <li>
+                            <a href="">AKA</a>
+                        </li>
+                         <li>
+                            <a href="">Akon</a>
+                        </li>
+                        <li>
+                            <a href="">Akwaboah</a>
+                        </li>
+                        <li>
+                            <a href="">Alpha P</a>
+                        </li>
+                        <li>
+                            <a href="">Angelique Kidjo</a>
+                        </li>
+                        <li>
+                            <a href="">Aramide</a>
+                        </li>
+                        <li>
+                            <a href="">Asa</a>
+                        </li>
+                        <li>
+                            <a href="">Ayo maff</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        B
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">B-Red</a>
+                        </li>
+                        <li>
+                            <a href="">B4Bonah</a>
+                        </li>
+                         <li>
+                            <a href="">Bad Boy Timz</a>
+                        </li>
+                        <li>
+                            <a href="">Bankulli</a>
+                        </li>
+                        <li>
+                            <a href="">BankyOnDBeatz</a>
+                        </li>
+                        <li>
+                            <a href="">Barry Jhay</a>
+                        </li>
+                        <li>
+                            <a href="">Basketmouth</a>
+                        </li>
+                        <li>
+                            <a href="">Becca</a>
+                        </li>
+                        <li>
+                            <a href="">Bella Alubo</a>
+                        </li>
+                        <li>
+                            <a href="">Bella Shmurda</a>
+                        </li>
+                        <li>
+                            <a href="">Bisa Kdei</a>
+                        </li>
+                        <li>
+                            <a href="">Burna Boy</a>
+                        </li>
+                        <li>
+                            <a href="">BlaqBonez</a>
+                        </li>
+                         <li>
+                            <a href="">Bisola</a>
+                        </li>
+                         <li>
+                            <a href="">Blackface</a>
+                        </li>
+                         <li>
+                            <a href="">BlackMagic</a>
+                        </li>
+                         <li>
+                            <a href="">Buju</a>
+                        </li>
+                         <li>
+                            <a href="">Brymo</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        C
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Camidoh</a>
+                        </li>
+                        <li>
+                            <a href="">Cassper Nyovest</a>
+                        </li>
+                        <li>
+                            <a href="">CDQ</a>
+                        </li>
+                        <li>
+                            <a href="">Ceeza Milli</a>
+                        </li>
+                        <li>
+                            <a href="">Chidinma</a>
+                        </li>
+                        <li>
+                            <a href="">Chike</a>
+                        </li>
+                         <li>
+                            <a href="">Chinko Ekun</a>
+                        </li>
+                        <li>
+                            <a href="">CKay</a>
+                        </li>
+                        <li>
+                            <a href="">Cobhams Asuquo</a>
+                        </li>
+                         <li>
+                            <a href="">Crayon</a>
+                        </li>
+                         <li>
+                            <a href="">Cynthia Morgan</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        D
+                    </p>
+                     <ul class="fot">
+                        <li>
+                            <a href="">Davido</a>
+                        </li>
+                        <li>
+                            <a href="">D'Prince</a>
+                        </li>
+                        <li>
+                            <a href="">D'Tunes</a>
+                        </li>
+                        <li>
+                            <a href="">Dagrin</a>
+                        </li>
+                        <li>
+                            <a href="">Daddy Showkey</a>
+                        </li>
+                        <li>
+                            <a href="">Dammy Krane</a>
+                        </li>
+                         <li>
+                            <a href="">Danny S</a>
+                        </li>
+                        <li>
+                            <a href="">Dapo Turbuna</a>
+                        </li>
+                         <li>
+                            <a href="">Darey </a>
+                        </li>
+                         <li>
+                            <a href="">Darkovibes </a>
+                        </li>
+                         <li>
+                            <a href="">David Meli </a>
+                        </li>
+                         <li>
+                            <a href="">Davolee</a>
+                        </li>
+                        <li>
+                            <a href="">Del'B</a>
+                        </li>
+                         <li>
+                            <a href="">Demmie Ve</a>
+                        </li>
+                         <li>
+                            <a href="">Diamond Platnumz</a>
+                        </li>
+                         <li>
+                            <a href="">DJ Cuppy</a>
+                        </li>
+                         <li>
+                            <a href="">DMW</a>
+                        </li>
+                         <li>
+                            <a href="">Don Jazzy</a>
+                        </li>
+                         <li>
+                            <a href="">DJ Lambo</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        E
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">E-Kelly</a>
+                        </li>
+                        <li>
+                            <a href="">E.L</a>
+                        </li>
+                        <li>
+                            <a href="">Edem</a>
+                        </li>
+                        <li>
+                            <a href="">Efya</a>
+                        </li>
+                        <li>
+                            <a href="">eLDee</a>
+                        </li>
+                        <li>
+                            <a href="">eMTee</a>
+                        </li>
+                         <li>
+                            <a href="">Erigga</a>
+                        </li>
+                        <li>
+                            <a href="">Eugy</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        F
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Fally Ipupa</a>
+                        </li>
+                        <li>
+                            <a href="">Falz</a>
+                        </li>
+                        <li>
+                            <a href="">Fela Kuti</a>
+                        </li>
+                        <li>
+                            <a href="">Femi Kuti</a>
+                        </li>
+                        <li>
+                            <a href="">Fiokee</a>
+                        </li>
+                        <li>
+                            <a href="">Fireboy DML</a>
+                        </li>
+                         <li>
+                            <a href="">Flavour</a>
+                        </li>
+                        <li>
+                            <a href="">Frank Edwards</a>
+                        </li>
+                        <li>
+                            <a href="">Funbi</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        G
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">GuiltyBeatz</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        H
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Harmonize</a>
+                        </li>
+                        <li>
+                            <a href="">Harrysong</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        I
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Ice Prince</a>
+                        </li>
+                        <li>
+                            <a href="">ID Cabasa</a>
+                        </li>
+                        <li>
+                            <a href="">Ichaba</a>
+                        </li>
+                        <li>
+                            <a href="">Idahams</a>
+                        </li>
+                        <li>
+                            <a href="">Idowest</a>
+                        </li>
+                        <li>
+                            <a href="">iLLBliSS</a>
+                        </li>
+                        <li>
+                            <a href="">Iyanya</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        J
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">J martins</a>
+                        </li>
+                        <li>
+                            <a href="">J.Derobie</a>
+                        </li>
+                        <li>
+                            <a href="">Jaywon</a>
+                        </li>
+                        <li>
+                            <a href="">Jesse Jagz</a>
+                        </li>
+                        <li>
+                            <a href="">jhybo</a>
+                        </li>
+                        <li>
+                            <a href="">Jidenna</a>
+                        </li>
+                        <li>
+                            <a href="">Jinmi Abduls</a>
+                        </li>
+                        <li>
+                            <a href="">Johnny Drille</a>
+                        </li>
+                        <li>
+                            <a href="">Joeboy</a>
+                        </li>
+                        <li>
+                            <a href="">Juls</a>
+                        </li>
+                        <li>
+                            <a href="">Junior Boy</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        K
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Kcee</a>
+                        </li>
+                        <li>
+                            <a href="">Kel P</a>
+                        </li>
+                        <li>
+                            <a href="">Kelvyn Boy</a>
+                        </li>
+                        <li>
+                            <a href="">Kida Kudz</a>
+                        </li>
+                        <li>
+                            <a href="">Kiddominant</a>
+                        </li>
+                        <li>
+                            <a href="">KiDi</a>
+                        </li>
+                        <li>
+                            <a href="">Killertunes</a>
+                        </li>
+                        <li>
+                            <a href="">King Perry</a>
+                        </li>
+                        <li>
+                            <a href="">King Promise</a>
+                        </li>
+                        <li>
+                            <a href="">Kizz Daniel</a>
+                        </li>
+                        <li>
+                            <a href="">Kofi Mole</a>
+                        </li>
+                        <li>
+                            <a href="">Koker</a>
+                        </li>
+                        <li>
+                            <a href="">Korede Bello</a>
+                        </li>
+                         <li>
+                            <a href="">Kranium</a>
+                        </li>
+                         <li>
+                            <a href="">Krizbeats</a>
+                        </li>
+                        <li>
+                            <a href="">Kwesi Arthur</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        L
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">L.A.X</a>
+                        </li>
+                        <li>
+                            <a href="">Ladipoe</a>
+                        </li>
+                        <li>
+                            <a href="">Lady Donli</a>
+                        </li>
+                        <li>
+                            <a href="">Larry Gaaga</a>
+                        </li>
+                        <li>
+                            <a href="">Laycon</a>
+                        </li>
+                        <li>
+                            <a href="">Leriq</a>
+                        </li>
+                        <li>
+                            <a href="">Lil Frosh</a>
+                        </li>
+                        <li>
+                            <a href="">Lil Kesh</a>
+                        </li>
+                        <li>
+                            <a href="">Loose Kaynon</a>
+                        </li>
+                        <li>
+                            <a href="">Lola Rae</a>
+                        </li>
+                        <li>
+                            <a href="">Lyta</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        M
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">M.anifest</a>
+                        </li>
+                        <li>
+                            <a href="">M.I Abaga</a>
+                        </li>
+                        <li>
+                            <a href="">Mafikizolo</a>
+                        </li>
+                        <li>
+                            <a href="">Maleek Berry</a>
+                        </li>
+                        <li>
+                            <a href="">Masterkraft</a>
+                        </li>
+                        <li>
+                            <a href="">May D</a>
+                        </li>
+                        <li>
+                            <a href="">Mayorkun</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        N
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Naeto C</a>
+                        </li>
+                        <li>
+                            <a href="">Naira Marley</a>
+                        </li>
+                        <li>
+                            <a href="">Nasty C</a>
+                        </li>
+                        <li>
+                            <a href="">Nathaniel Bassey</a>
+                        </li>
+                        <li>
+                            <a href="">Nikki Laoye</a>
+                        </li>
+                        <li>
+                            <a href="">Niniola</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        O
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Odunsi</a>
+                        </li>
+                        <li>
+                            <a href="">Ola Dips</a>
+                        </li>
+                        <li>
+                            <a href="">Olakira</a>
+                        </li>
+                        <li>
+                            <a href="">Olamide</a>
+                        </li>
+                        <li>
+                            <a href="">Omah Lay</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        P
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">P-Square</a>
+                        </li>
+                        <li>
+                            <a href="">Pasuma</a>
+                        </li>
+                        <li>
+                            <a href="">Patoranking</a>
+                        </li>
+                        <li>
+                            <a href="">Paul Okoye</a>
+                        </li>
+                        <li>
+                            <a href="">Pepenazi</a>
+                        </li>
+                        <li>
+                            <a href="">Peruzzi</a>
+                        </li>
+                        <li>
+                            <a href="">Pheelz</a>
+                        </li>
+                         <li>
+                            <a href="">Phyno</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        Q
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Qdot
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        R                    
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">2Bees</a>
+                        </li>
+                        <li>
+                            <a href="">Reekado Banks</a>
+                        </li>
+                        <li>
+                            <a href="">Rema</a>
+                        </li>
+                        <li>
+                            <a href="">Reminisce</a>
+                        </li>
+                        <li>
+                            <a href="">Rexxie</a>
+                        </li>
+                        <li>
+                            <a href="">Rudeboy</a>
+                        </li>
+                        <li>
+                            <a href="">Ruffcoin</a>
+                        </li>
+                         <li>
+                            <a href="">Runtown</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        S
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Samini</a>
+                        </li>
+                        <li>
+                            <a href="">Samklef</a>
+                        </li>
+                        <li>
+                            <a href="">Sammie Okposo</a>
+                        </li>
+                        <li>
+                            <a href="">Sarkodie</a>
+                        </li>
+                        <li>
+                            <a href="">Sarz</a>
+                        </li>
+                        <li>
+                            <a href="">Sauti Sol</a>
+                        </li>
+                        <li>
+                            <a href="">Sean Tizzle</a>
+                        </li>
+                         <li>
+                            <a href="">Selebobo</a>
+                        </li>
+                        <li>
+                            <a href="">Seun Kuti</a>
+                        </li>
+                         <li>
+                            <a href="">Seyi Shay</a>
+                        </li>
+                        <li>
+                            <a href="">Shatta Wale</a>
+                        </li>
+                         <li>
+                            <a href="">Show Dem Camp</a>
+                        </li>
+                        <li>
+                            <a href="">Simi</a>
+                        </li>
+                    </ul>
+                     <p class="fct">
+                        T
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">T Classic</a>
+                        </li>
+                        <li>
+                            <a href="">Tay Iwar</a>
+                        </li>
+                        <li>
+                            <a href="">Teddy A</a>
+                        </li>
+                        <li>
+                            <a href="">Teeto Ceemos</a>
+                        </li>
+                        <li>
+                            <a href="">Tekno</a>
+                        </li>
+                        <li>
+                            <a href="">Telz</a>
+                        </li>
+                        <li>
+                            <a href="">Tems</a>
+                        </li>
+                         <li>
+                            <a href="">Teni</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        U
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Umu Obiligbo</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        V
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Vector</a>
+                        </li>
+                        <li>
+                            <a href="">Victor AD</a>
+                        </li>
+                        <li>
+                            <a href="">Victony</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        W
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Waje</a>
+                        </li>
+                        <li>
+                            <a href="">Wale Turner</a>
+                        </li>
+                        <li>
+                            <a href="">Wande Coal</a>
+                        </li>
+                        <li>
+                            <a href="">Wizkid</a>
+                            
+                        </li>
+                        <li>
+                            <a href="">Wurld</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        Y
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Ycee</a>
+                        </li>
+                        <li>
+                            <a href="">Yemi Alade</a>
+                        </li>
+                        <li>
+                            <a href="">Yemi Sax</a>
+                        </li>
+                        <li>
+                            <a href="">Young John</a>
+                        </li>
+                        <li>
+                            <a href="">Youssou N'Dou</a>
+                        </li>
+                        <li>
+                            <a href="">Yung L</a>
+                        </li>
+                        <li>
+                            <a href="">Yung6ix</a>
+                        </li>
+                    </ul>
+                    <p class="fct">
+                        Z
+                    </p>
+                    <ul class="fot">
+                        <li>
+                            <a href="">Zinoleesky</a>
+                        </li>
+                        <li>
+                            <a href="">Zlatan</a>
+                        </li>
+                        <li>
+                            <a href="">Zoro</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <p class="pt">
+                        Check out the Latest Music Video releases and Get updates as they drop via X and Facebook
+                </p>
+         
+
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="jiss">
+            <p class="fizzy">
+                IZZY MUSIC
+            </p>
+            <p class="ent">
+                Entertainment for African Youth
+            </p>
+            <div class="mont">
+                <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="ml-0 card-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="ard">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="" class="ard">
+                    <i class="fa-brands fa-facebook-f" ></i>
+                </a>
+                <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="ard">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="ard">
+                    <i class="fa-brands fa-x-twitter" class="fa"></i>
+                </a>
+               
+            </div>
+        </div>
+        <div class="fact">
+            <p class="card-link">
+                <a href="" class="card-link ill">Links</a>
+            </p>
+            <p>
+                <a href="Footers topic.html" class="fila">Topic</a>
+            </p>
+            <p>
+                <a href="Artist A - Z.html" class="fila">Artists A to Z</a>
+            </p>
+            <p>
+                <a href="Afrobeats biography.html" class="fila">Afrobeats</a>
+            </p>
+            <p>
+                <a href="Burna boy bio.html" class="fila">Burna Boy</a>
+            </p>
+            <p>
+                <a href="Davido bio.html" class="fila">Davido</a>
+            </p>
+            <p>
+                <a href="wizkid bio.html" class="fila">Wizkid</a>
+            </p>
+            <p>
+                <a href="Ayrastar bio.html" class="fila">Ayra Starr</a>
+            </p>
+            <p>
+                <a href="Rema.html" class="fila">Rema</a>
+            </p>
+            <p>
+                <a href="Tems bio.html" class="fila">Tems</a>
+            </p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Legal</a></p>
+            <p><a href="DCMA removal.html" class="fila">DMCA Removal</a></p>
+            <p><a href="Privacy policy.html" class="fila">Privacy Policy</a></p>
+            <p><a href="Disclaimer.html" class="fila">Affiliate Disclaimer</a></p>
+            <p><a href="Terms of use.html" class="fila">Terms of Use</a></p>
+            <p><a href="" class="fila"></a></p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Company</a></p>
+            <p><a href="Contact us.html" class="fila">Contact Us</a></p>
+            <p><a href="Privacy policy.html" class="fila">Privacy Policy</a></p>
+            <p><a href="" class="fila">Streams on Apple and Spotify</a></p>
+            <p><a href="" class="fila">Sitemap</a></p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Partners</a></p>
+            <p><a href="TIER A.html" class="fila">Entiar</a></p>
+            <p><a href="Izzy distro.html" class="fila">IZZY Distro</a></p>
+            <p><a href="" class="fila">Predict n Win</a></p>
+            <p><a href="" class="fila">East Africa</a></p>
+        </div>
+    </footer>
+    <div class="copyr">
+        Copyright © 2025, IZZY MUSIC Inc
+    </div>
+    
+    <!-- <input type="checkbox" class="ext"> -->
+    <aside class="ads">
+        <div class="ist">
+                <p>
+                    <a href="Index.html" class="card-link">Home</a>
+                </p>
+                <p>
+                    <a href="IZZY songs.html" class="card-link">Songs</a>
+                </p>
+                <p>
+                    <a href="Video.html" class="card-link">Video</a>
+                </p>
+        </div>
+        <div class="tst">
+            <p>
+                <a href="IZZY lyrics.html" class="card-link">Lyrics</a></p>
+            <p> 
+                <a href="IZZY news.html" class="card-link">News</a>
+            </p>
+            <p>
+                <a href="IZZY sports.html" class="card-link">Sports</a>
+            </p>
+            <p>
+                <a href="Ranking.html" class="card-link">Power Ranking</a>
+            </p>
+        </div>
+        <div class="monj">
+            <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="ml-0 card-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="ml-3 card-link">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" class="ml-3 card-link">
+                <i class="fa-brands fa-facebook-f" ></i>
+            </a>
+            <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="ml-3 card-link">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="ml-3 card-link">
+                <i class="fa-brands fa-x-twitter" class="fa"></i>
+            </a>
+            <a href="" class="ml-3 card-link">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+           
+        </div>
+        <div class="hop">
+            Copyright © 2025, IZZY MUSIC Inc
+        </div>
+    </aside>
+
+
+    <script>
+        function menu(){
+            var t = document.getElementsByClassName("ads")[0]
+
+            if(t.style.left == "-30%" && t.style.opacity == "0"){
+                t.style.left = "0%"
+                t.style.opacity = "1"
+            }
+            else{
+                t.style.left = "-30%"
+                t.style.opacity = "0"
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web (1)/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        @font-face{
+            font-family: 'Inter';
+            src: url(../../Downloads/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+        }
+        @font-face{
+            font-family: 'Montserrat';
+            src: url(../../Downloads/Montserrat/Montserrat-VariableFont_wght.ttf);
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hd{
+            width: calc(100% - 200px);
+            height: fit-content;
+            display: flex;
+            margin: auto 0;
+            background-color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+            color: #fffbfa;
+            padding: 10px 100px;
+            font-size: 18px;
+            justify-content: space-evenly;
+            /* align-content: center; */
+            align-items: center;
+        }
+        .IZZY{
+            font-size: 30px;
+            font-family: 'Inter', sans-serif;
+            color: #fffbfa;
+        }
+        .lu{
+            display: flex;
+        }
+        .lu li a{
+            color: #fffbfa;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .lu li a:hover{
+            color: #d0e562;
+        }
+        .font a{
+            color: #b6d369;
+            font-size: 22px;
+            margin-left: 12px;
+        }
+        .font a:hover{
+            
+            color: #eae7cb;
+        }
+        .hoot{
+            width: calc(100% - 160px);
+            height: fit-content;
+            padding: 40px 80px;
+            background-color: #00203e;
+            border-bottom: 1px solid #5e5e5e;
+            line-height: 40px;
+            display: flex;
+            justify-content: space-between
+        }
+        .mont .ink{
+            margin-left: 15px;
+        }
+        .foot{
+            width: calc(100% - 160px);
+            line-height: 40px;
+        }
+        .ads{
+            left: -350px;
+            line-height: 40px;
+        }
+        input:checked ~ .ads{
+            left: 0;
+    
+        }
+        .lagsok{
+            height: 250px;
+        }
+        .lone{
+            width: 100%;
+            height: fit-content;
+            padding: 50px 0;
+            background-color: #eae7cb;
+        }
+        .hone{
+            font-size: 115px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hwo{
+            font-size: 77px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .give{
+            width: 55%;
+            height: fit-content;
+            /* background-color: teal; */
+            margin: 0 auto;
+        }
+        .march{
+            width: 100%;
+            height: fit-content;
+            font-size: 25px;
+            /* background-color: teal; */
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 100px;
+        }
+        .sect{
+            font-size: 18px;
+            font-weight: bold;
+            color: #00203e;
+            font-family: 'Montserrat', sans-serif; 
+            border: 1px solid #00203e;
+            border-radius: 7px;
+            padding: 5px 10px;
+        }
+        .sect option{
+            font-weight: bold;
+        }
+        .iv{
+            display: flex;
+            justify-content: space-between;
+        }
+        .doug{
+            display: flex;
+            gap: 0px 20px;
+        }
+        .git{
+            border-bottom: 2px solid #00203e;
+            width: 100%;
+            height: fit-content;
+            margin-top: 40px;
+            padding: 5px 2px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 510;
+            font-family: 'Inter', sans-serif;
+            color: #00203e;
+            align-items: center;
+
+        }
+        .doug{
+            font-size: 20px;
+            font-weight: 510;
+            font-weight: bold;
+            /* font-family: 'Inter', sans-serif; */
+        }
+        .hilt{
+            border-bottom: 2px solid #00203e;
+            width: 100%;
+            height: fit-content;
+            /* margin-top: 40px; */
+            padding: 10px 2px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 510;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            /* align-content: center; */
+            align-items: center;
+            font-weight: bold;
+        }
+        .fons{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            color: #f32a56;
+        }
+        .ona{
+            font-size: 21px;
+            font-weight: 710;
+            margin-top: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .debut{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .list{
+            width: 100%;
+            height: fit-content;
+            background-color: #eae7cb;
+            padding: 50px 0;
+        }
+        .wisy{
+            width: 60%;
+            height: fit-content;
+            border-top: 2px solid #00203e;
+            padding: 20px 0;
+            /* background-color: red; */
+            margin: 50px auto;
+        }
+        .by{
+            font-size: 15px;
+            color: #00203e;
+            font-weight: 510;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: space-between;
+        }
+        .eliz{
+            text-decoration: none;
+            width: fit-content;
+            height: fit-content;
+            padding: 5px 10px;
+            border: 1px solid #00203e;
+            border-radius: 10px;
+            color: #00203e;
+        }
+        .fare{
+            font-size: 18px;
+            color: #00203e;
+            font-weight: 710;
+            font-family: 'Montserrat', sans-serif;
+            /* margin-top: 30px; */
+        }
+        .fare p{
+            margin-bottom: 10px;
+        }
+        .fare .hg{
+            color: #00203e;
+
+        }
+        .fare .fg{
+            color: #00203e;
+            margin-left: 10px;
+
+        }
+        .nales{
+            width: 75%;
+            height: fit-content;
+            /* background-color: yellow; */
+            font-weight: 550;
+            /* background-color: red; */
+
+        }
+        .ales{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            font-size: 35px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+        }
+        .snare{
+            display: flex;
+            justify-content: space-between;
+            width: fit-content;
+            /* background-color: red; */
+            margin-top: 50px;
+        }
+        .jejet{
+            width: 95%;
+            height: 500px;
+            margin-top: 20px;
+        }
+        .bale{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .nole{
+            font-size: 60px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            margin-top: -10px;
+            width: fit-content;
+            height: fit-content;
+            /* background-color: yellow; */
+        }
+        .pale{
+            width: 91%;
+            height: fit-content;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+            /* background-color: yellow; */
+
+        }
+        .fale{
+            width: 100%;
+            height: fit-content;
+            /* background-color: red; */
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 410;
+            margin-top: 30px;
+            color: #00203e;
+        }
+        .pt{
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .kt{
+            margin-top: 20px;
+            font-size: 17px;
+            font-family: 'Inter', sans-serif;
+            color: #da0f31;
+        }
+        .audi{
+            width: 100%;
+            height: 50px;
+        }
+        .jt{
+            margin-top: 20px;
+            font-size: 17px;
+            margin-left: 40px;
+            font-family: 'Inter', sans-serif;
+            color: #00203e;
+        }
+        .doon{
+            width: calc(100% - 40px);
+            height: fit-content;
+            background-color: #eae7cb;
+            padding: 20px 20px;
+        }
+        .foon{
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            color: #00203e;
+        }
+        .boog{
+            width: 20%;
+            height: fit-content;
+            /* background-color: red; */
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 7px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 510;
+        }
+        .noog{
+            width: 60%;
+            height: fit-content;
+            margin-left: 40px;
+            font-size: 17px;
+        }
+        .wii{
+            font-size: 60px;
+            /* color: red; */
+            font-weight: 510;
+            
+        }
+        .fct{
+            font-size: 30px;
+            /* color: red; */
+            font-weight: 510;
+            margin-top: 20px;
+            
+        }
+        .dot{
+            text-align: center;
+            line-height: 30px;
+        }
+        .dot li a{
+            color: #da0f31;
+            font-weight: 510;
+        }
+        .fot{
+            text-align: center;
+            line-height: 30px;
+            /* margin-left: 40px; */
+            margin-top: 40px;
+
+
+
+        }
+        .fot li a{
+            color: #da0f31;
+            font-weight: 510;
+
+        }
+        .kot{
+            text-align: center;
+            line-height: 30px;
+            /* margin-left: 40px; */
+            margin-top: 40px;
+        }
+        .kot li a{
+            color: #da0f31;
+            font-weight: 510;
+        }
+        .pft{
+            width: fit-content;
+            height: fit-content;
+            margin: 0px 50px;
+            margin-right: 0px;
+            /* background-color: red; */
+            padding: 20px 50px;
+            /* margin-top: 20px; */
+            /* display: flex; */
+            /* justify-content: space-between; */
+        }
+        @media (max-width: 1300px) {
+            .hd{
+                padding: 10px 40px;
+                width: calc(100% - 80px);
+                /* background-color: red; */
+            }
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 84px;
+                opacity: 0;
+            }
+            .snare{
+                display: block;
+            }
+            .nales{
+                margin-top: 20px;
+                width: 100%;
+            }
+            .ales{
+                font-size: 25px;
+            }
+            .lahos{
+                height: 500px;
+            }
+            .bale{
+                margin-top: 15px;
+            }
+        } 
+        @media (max-width: 1199px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 195px;
+                /* opacity: 1; */
+            }
+        }
+        @media (max-width: 1110px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 185px;
+                /* opacity: 1; */
+            }
+           
+        }
+        @media (max-width: 1100px) {
+            .wisy{
+                width: 70%;
+            }
+            .skpale{
+                height: 480px;
+            }
+            
+            
+        }
+        @media (max-width: 1060px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 180px;
+                /* opacity: 1; */
+            } 
+        }
+        @media (max-width: 1020px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                /* opacity: 1; */
+            }
+            
+        }
+        @media (max-width: 1000px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 160px;
+                /* opacity: 1; */
+            } 
+            /* .hd{
+                background-color: red;
+            } */
+            .skpale{
+                height: 430px;
+            } 
+        }
+        @media (max-width: 900px) {
+            /* .hd{
+                background-color: green;
+            } */
+            .wisy{
+                width: 80%;
+            }
+            .lahos{
+                height: 450px;
+            }
+           
+
+            
+        }
+        @media (max-width: 700px) {
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 95px;
+                /* opacity: 1; */
+            }
+            .nole{
+                font-size: 45px;
+            }
+            .pale{
+                font-size: 17px;
+            }
+            .ent{
+                font-size: 18px;
+            }
+            .lahos{
+                height: 350px;
+            }
+            
+        }
+        @media (max-width: 600px) {
+            /* .hd{
+                background-color: rgb(89, 0, 255);
+            } */
+            .ext{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 15px;
+                left: 65px;
+                /* opacity: 1; */
+            }
+            .wisy{
+                width: 90%;
+            }
+           .lahos{
+                height: 320px;
+           }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="hd">
+        <div class="my">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="Index.html" class="IZZY">IZZY MUSIC</a>
+        <ul class="lu">
+            <li>
+                <a href="IZZY songs.html" class="">SONGS</a>
+            </li>
+            <li>
+                <a href="IZZY news.html" class="">NEWS</a>
+            </li> <li>
+                <a href="IZZY lyrics.html" class="">LYRICS</a>
+            </li>
+            <li>
+                <a href="IZZY sports.html" class="">SPORTS</a>
+            </li>
+            <li>
+                <a href="Ranking.html" class="">POWER RANKING</a>
+            </li>
+        </ul>
+        <div class="font my-auto">
+            <a href="" class="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="https://wa.me/+2348140583514" class="ml-3 card-link gr">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="gr">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="gr">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" class="gr">
+                <i class="fa-brands fa-facebook-f" ></i>
+            </a>
+            <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="gr">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="gr">
+                <i class="fa-brands fa-x-twitter" class="fa"></i>
+            </a>
+            <a href="" class="">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+        </div>
+    </div> 
+    <div class="doon">
+        <div class="foon">
+            <div class="boog">
+                Terms of Use
+            </div>
+            <div class="noog">
+                <span class="wii">T</span>
+                he Notjustok Inc website located at 
+                https://notjustok.com is a copyrighted work belonging 
+                to Notjustok Inc. Certain features of the Site may be 
+                subject to additional guidelines, terms, or rules, which 
+                will be posted on the Site in connection with such features.
+                <p class="pt">
+                  All such additional terms, guidelines, and rules are incorporated by reference into these Terms.
+
+
+
+
+                </p>
+                <p class="pt">
+                   These Terms of Use described the legally binding terms 
+                   and conditions that oversee your use of the Site. BY 
+                   LOGGING INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE 
+                   TERMS and you represent that you have the authority and 
+                   capacity to enter into these Terms. YOU SHOULD BE AT LEAST 
+                   18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL 
+                   OF THE PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR 
+                   USE THE SITE.
+                </p>
+                <p class="pt">
+                   These terms require the use of arbitration Section 
+                   10.2 on an individual basis to resolve disputes and also 
+                   limit the remedies available to you in the event of a dispute. 
+                   These Terms of Use were created with the help of the Terms 
+                   Of Use Generator.
+
+                </p>
+                <p class="fct">
+                    Access to the Site
+                </p>
+
+                <p class="pt">
+                   
+                    Subject to these Terms. Company grants you a 
+                    non-transferable, non-exclusive, revocable, limited 
+                    license to access the Site solely for your own 
+                    personal, noncommercial use.
+                </p>
+                <p class="pt">
+                    Certain Restrictions. The rights approved to you in 
+                    these Terms are subject to the following restrictions: 
+                    (a) you shall not sell, rent, lease, transfer, assign, 
+                    distribute, host, or otherwise commercially exploit the Site; 
+                    (b) you shall not change, make derivative works of, disassemble, 
+                    reverse compile or reverse engineer any part of the Site; 
+                    (c) you shall not access the Site in order to build a similar or 
+                    competitive website; and (d) except as expressly stated herein, no 
+                    part of the Site may be copied, reproduced, distributed, republished, 
+                    downloaded, displayed, posted or transmitted in any form or by any 
+                    means unless otherwise indicated, any future release, update, or other 
+                    addition to functionality of the Site shall be subject to these Terms.  
+                    All copyright and other proprietary notices on the Site must be 
+                    retained on all copies thereof.
+
+
+                </p>
+
+                <p class="pt">
+                   Company reserves the right to change, suspend, or 
+                   cease the Site with or without notice to you.  You approved 
+                   that Company will not be held liable to you or any third-party 
+                   for any change, interruption, or termination of the Site or any part.
+                </p>
+                <p class="pt">
+                  No Support or Maintenance. You agree that Company will have 
+                  no obligation to provide you with any support in connection with the Site.
+                </p>
+                <p class="pt">
+                   Excluding any User Content that you may provide, you are aware 
+                   that all the intellectual property rights, including copyrights, 
+                   patents, trademarks, and trade secrets, in the Site and its 
+                   content are owned by Company or Company’s suppliers. Note 
+                   that these Terms and access to the Site do not give you any 
+                   rights, title or interest in or to any intellectual property 
+                   rights, except for the limited access rights expressed in 
+                   Section 2.1. Company and its suppliers reserve all rights 
+                   not granted in these Terms.
+                </p>
+                <p class="fct">
+                    Third-Party Links & Ads; Other Users
+
+
+
+                </p>
+                <p class="pt">
+                    Third-Party Links & Ads. The Site may contain 
+                    links to third-party websites and services, and/or 
+                    display advertisements for third-parties.  Such Third-Party 
+                    Links & Ads are not under the control of Company, and Company 
+                    is not responsible for any Third-Party Links & Ads.  Company 
+                    provides access to these Third-Party Links & Ads only as a 
+                    convenience to you, and does not review, approve, monitor, 
+                    endorse, warrant, or make any representations with respect 
+                    to Third-Party Links & Ads.  You use all Third-Party Links 
+                    & Ads at your own risk, and should apply a suitable level of 
+                    caution and discretion in doing so. When you click on any of 
+                    the Third-Party Links & Ads, the applicable third party’s terms 
+                    and policies apply, including the third party’s privacy and data
+                     gathering practices.
+                </p>
+                <p class="pt">
+                    Other Users. Each Site user is solely responsible for 
+                    any and all of its own User Content.  Because we do not 
+                    control User Content, you acknowledge and agree that we are
+                    not responsible for any User Content, whether provided by 
+                    you or by others.  You agree that Company will not be 
+                    responsible for any loss or damage incurred as the result of
+                    any such interactions.  If there is a dispute between you 
+                    and any Site user, we are under no obligation to become 
+                    involved.
+                </p>
+                <p class="pt">
+                   You hereby release and forever discharge the Company 
+                   and our officers, employees, agents, successors, and assigns 
+                   from, and hereby waive and relinquish, each and every past, 
+                   present and future dispute, claim, controversy, demand, right, 
+                   obligation, liability, action and cause of action of every 
+                   kind and nature, that has arisen or arises directly or 
+                   indirectly out of, or that relates directly or indirectly to, 
+                   the Site. If you are a California resident, you hereby waive 
+                   California civil code section 1542 in connection with the 
+                   foregoing, which states: "a general release does not extend 
+                   to claims which the creditor does not know or suspect to exist 
+                   in his or her favor at the time of executing the release, which 
+                   if known by him or her must have materially affected his or her 
+                   settlement with the debtor."
+                </p>
+                <p class="fct">
+                    Your Privacy. Please read our Privacy Policy.
+                </p>
+                <p class="pt">
+                    Copyright/Trademark Information. Copyright ©. 
+                    All rights reserved.  All trademarks, logos and 
+                    service marks displayed on the Site are our property 
+                    or the property of other third-parties. You are not 
+                    permitted to use these Marks without our prior written 
+                    consent or the consent of such third party which may 
+                    own the Marks.
+                </p>
+                <p class="fct">
+                    Contact Information
+                </p>
+                <p class="pt">
+                    Address: Park Brooke Cir Marietta, Ga 30008 USA
+                </p>
+                <p class="pt">
+                    Email: mola@notjustok.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="jiss">
+            <p class="fizzy">
+                IZZY MUSIC
+            </p>
+            <p class="ent">
+                Entertainment for African Youth
+            </p>
+            <div class="mont">
+                <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="ml-0 card-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="ard">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="" class="ard">
+                    <i class="fa-brands fa-facebook-f" ></i>
+                </a>
+                <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="ard">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="ard">
+                    <i class="fa-brands fa-x-twitter" class="fa"></i>
+                </a>
+               
+            </div>
+        </div>
+        <div class="fact">
+            <p class="card-link">
+                <a href="" class="card-link ill">Links</a>
+            </p>
+            <p>
+                <a href="Footers topic.html" class="fila">Topic</a>
+            </p>
+            <p>
+                <a href="Artist A - Z.html" class="fila">Artists A to Z</a>
+            </p>
+            <p>
+                <a href="Afrobeats biography.html" class="fila">Afrobeats</a>
+            </p>
+            <p>
+                <a href="Burna boy bio.html" class="fila">Burna Boy</a>
+            </p>
+            <p>
+                <a href="Davido bio.html" class="fila">Davido</a>
+            </p>
+            <p>
+                <a href="wizkid bio.html" class="fila">Wizkid</a>
+            </p>
+            <p>
+                <a href="Ayrastar bio.html" class="fila">Ayra Starr</a>
+            </p>
+            <p>
+                <a href="Rema.html" class="fila">Rema</a>
+            </p>
+            <p>
+                <a href="Tems bio.html" class="fila">Tems</a>
+            </p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Legal</a></p>
+            <p><a href="DCMA removal.html" class="fila">DMCA Removal</a></p>
+            <p><a href="Privacy policy.html" class="fila">Privacy Policy</a></p>
+            <p><a href="Disclaimer.html" class="fila">Affiliate Disclaimer</a></p>
+            <p><a href="Terms of use.html" class="fila">Terms of Use</a></p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Company</a></p>
+            <p><a href="Contact us.html" class="fila">Contact Us</a></p>
+            <p><a href="Privacy policy.html" class="fila">Privacy Policy</a></p>
+            <p><a href="" class="fila">Streams on Apple and Spotify</a></p>
+            <p><a href="" class="fila">Sitemap</a></p>
+        </div>
+        <div class="fact">
+            <p><a href="" class="ill card-link">Partners</a></p>
+            <p><a href="TIER A.html" class="fila">Entiar</a></p>
+            <p><a href="Izzy distro.html" class="fila">IZZY Distro</a></p>
+            <p><a href="" class="fila">Predict n Win</a></p>
+            <p><a href="" class="fila">East Africa</a></p>
+        </div>
+    </footer>
+    <div class="copyr">
+        Copyright © 2025, IZZY MUSIC Inc
+    </div>
+    
+    <input type="checkbox" class="ext">
+    <aside class="ads">
+        <div class="ist">
+                <p>
+                    <a href="Index.html" class="card-link">Home</a>
+                </p>
+                <p>
+                    <a href="IZZY songs.html" class="card-link">Songs</a>
+                </p>
+                <p>
+                    <a href="Video.html" class="card-link">Video</a>
+                </p>
+        </div>
+        <div class="tst">
+            <p>
+                <a href="IZZY lyrics.html" class="card-link">Lyrics</a></p>
+            <p> 
+                <a href="IZZY news.html" class="card-link">News</a>
+            </p>
+            <p>
+                <a href="IZZY sports.html" class="card-link">Sports</a>
+            </p>
+            <p>
+                <a href="Ranking.html" class="card-link">Power Ranking</a>
+            </p>
+        </div>
+        <div class="monj">
+            <a href="https://www.instagram.com/princek_81?igsh=MWZoYng2Z3QwOTlmZw==" class="ml-0 card-link">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mynameis_israel?_t=ZM-8wI5zsSbIPO&_r=1" class="ml-3 card-link">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="" class="ml-3 card-link">
+                <i class="fa-brands fa-facebook-f" ></i>
+            </a>
+            <a href="https://youtube.com/@akins-w1t?si=JhQEpWwW5wngMJ0Y" class="ml-3 card-link">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://x.com/KPrince92990?t=CN28lClC8DNuq3Te-4RmFg&s=09" class="ml-3 card-link">
+                <i class="fa-brands fa-x-twitter" class="fa"></i>
+            </a>
+            <a href="" class="ml-3 card-link">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </a>
+           
+        </div>
+        <div class="hop">
+            Copyright © 2025, IZZY MUSIC Inc
+        </div>
+    </aside>
+</body>
+</html>
